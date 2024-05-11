@@ -1,6 +1,6 @@
 import pytest
-from src.area import calculate_bmi
-from src.area import get_category
+from src.WeightHelper import calculate_bmi
+from src.WeightHelper import get_category
 
 def test_calculate_bmi():
     assert calculate_bmi(1.75, 70) == 22.857142857142858
