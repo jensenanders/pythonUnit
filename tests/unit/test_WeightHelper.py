@@ -21,10 +21,7 @@ def test_get_category_accepted():
     category = get_category(100000 - 180, float('inf') - 80)
     assert category == "Obese"
 
-def test_get_category_accepted():
-    category = get_category(180, 80)
-    assert category == "Normal weight"
 
-def test_get_category_accepted():
+def test_get_category_accepted_underweight():
     category = get_category(180, 50)
     assert category == "Underweight"
